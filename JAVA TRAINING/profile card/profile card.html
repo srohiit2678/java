@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile card</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: rgb(255, 255, 255);
+           
+        }
+        
+        .photo{
+            width: 250px;
+            height: 350px;
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius: 20px;            
+            background-color: rgb(64, 64, 180);
+            box-shadow:10px 10px rgb(0, 0, 0);
+        }
+       
+div >img{ 
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 20%;
+            left: 30%;
+            bottom: -30px;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius: 50%;
+            border: 3px solid rgb(45, 4, 128);
+}
+        .sub{
+            width: 250px;
+            height: 224px;
+            align-items: center;
+            border-bottom-right-radius:20px;
+            border-bottom-left-radius:20px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        #username{
+            text-align: center;
+            padding-top: 15px;
+
+        }
+        #work{
+            margin: 0;
+            text-align: center;
+            margin-top: -10px;
+        }
+        .social{
+            display: inline-flex;
+            flex-direction: row;
+            width: 250px;
+            height: 100px;
+            
+        }
+        img{ 
+            width: 55px;
+            height: 55px;
+            position: relative;
+            top: 20%;       
+            
+            border-radius: 50%;
+            border: 1px solid rgb(220, 217, 226);
+}
+        #logo1{
+            width:  52px;
+            height: 52px;
+            right:2px;
+        }
+        #logo2{
+            width: 45px;
+            height: 45px;
+            top: 23%;
+            left: 20%;
+        }
+        #logo3{
+            width: 50px;
+            height: 50px;
+            left: 50%;
+            top: 23px;
+        }
+        #logo4{
+            width:  50px;
+            height: 50px;
+            left: 80%;
+            top: 22px;
+        }
+        #follow{
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+           
+        }
+        .subscrib{
+            color:aliceblue;
+            background-color: rgb(64, 64, 180);
+            border-radius: 35%;
+            width: 40%;
+            height: 1%;
+            text-align: center;
+                      
+        }
+        .massag{
+            color:aliceblue;
+            background-color: rgb(64, 64, 180);
+            border-radius: 35%;
+            width: 40%;
+            height: 1%;
+            text-align: center;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="photo">
+        <div >
+         <img src="IMG_20230908_191041_170.jpg" alt="profile_picture">
+        </div>
+        <div class="sub">
+        <p id="username" href="#">@Srohiit_2678</p>
+        <p id="work">Developer & codder</p>
+
+        <div class="social">
+            <div class="fsocial"><a href="facebook.com"><img id="logo1" src="download.jpeg" alt="facebook_logo"></a></div>
+            <div class="isocial"><a href="instagram.com"><img id="logo2" src="Instagram_logo_2016.svg.webp" alt="instagram_logo"></a></div>
+            <div class="ysocial"><a href="youtube.com"><img id="logo3" src="download.png" alt="youtube_logo"></a></div>
+            <div class="lsocial"><a href="limkdin.com"><img id="logo4" src="download (1).png" alt="linkdin_logo"></a></div>
+            </div>
+       
+            <div id="follow">
+                <div class="subscrib"><p>Subscribe</p></div>
+                <div class="massag"><p>Massage</p></div>
+            </div>
+        </div> 
+      
+        </div>
+    </div>
+</body>
+</html>
