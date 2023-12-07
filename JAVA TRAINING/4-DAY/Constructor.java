@@ -24,10 +24,15 @@ public class Constructor{
         System.out.println("Student phone is: "+phone);
     }
     public static void main(String []args){
-        Constructor objo = new Constructor(); 
+        Constructor obj0 = new Constructor(); 
         Constructor obj = new Constructor(30,"Rohit", 8767442277l);
         Constructor obj1 = new Constructor(40,"Rohan");
         Constructor obj2 = new Constructor(); 
        // obj.post();
+       // i am bellow just bfor avoiding the warning
+       obj0.name ="Srohit";
+       obj.name = "Srohit";
+       obj1.name ="Srohit";
+       obj2.name = "Srohit";
     }
 }
