@@ -10,13 +10,14 @@ next()-> used to take String until first space not found.
 
 nextLine()-> it takes complete String along with space.
 
-nextInt()-> 	it take int value
-nextByte()-> 	it take byte value
-nextFloat()-> 	it take float value
-nextDouble()-> 	it take double value
-nextBoolean()-> it take boolean value
-nextShort()-> 	it take short value
-nextLong()-> 	it take long value
+nextInt()-> 	it take int value				421235
+nextByte()-> 	it take byte value   			123
+nextFloat()-> 	it take float value				1234.345
+nextDouble()-> 	it take double value			1234.1235634
+nextBoolean()-> it take boolean value			true,false
+nextShort()-> 	it take short value				334
+nextLong()-> 	it take long value 				454565623l
+nextChar()-> 	it take character vlaue 		'a','b','A'
 */
 
 class Input{
@@ -49,6 +50,14 @@ class Input{
          input_String = sc.nextLine();
 
 		System.out.println("By nextLine() method: "+input_String);
+		
+// for character
+
+		System.out.println("Enter 3rd String ");
+	   
+         input_char = sc.nextChar();
+
+		System.out.println("By nextChar() method: "+input_char);
 
 // for int
 		
