@@ -63,6 +63,21 @@ int it = bt + sht + ch; // 3 + 5 + 97 -> 105
 
 System.out.println(it);// 105
 
+/* // imp->
+
+NOTE ->
+ byte byt = 2;
+
+ byte byt2 = byt * 2; // error:possible lossy conversion from int to byte.
+
+// and if->
+ 
+ byte byt3=3;
+
+ // byt3 = byt3 * 2; // error:possible lossy conversion from int to byte.
+
+  byt3 = (byte)(byt3 * 2);
+*/
   
 // 7->
 
