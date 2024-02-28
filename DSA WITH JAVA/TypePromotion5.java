@@ -64,12 +64,47 @@ int it = bt + sht + ch; // 3 + 5 + 97 -> 105
 System.out.println(it);// 105
 
   
+// 7->
 
-
+/*
  bt = 3;
 sht = 5;
  ch = 'a';
-short sht2 = bt + sht + ch; // error
+short sht2 = bt + sht + ch; // error :possible lossy conversion from int to short
+*/
+
+// 8->
+
+int it2 = 4;
+long lg = 4l;
+
+long lg1 = it2 + lg; // 8
+
+//9 ->
+/*
+int it3 = lg + it2; // error: possible lossy conversion from long to int.
+*/
+
+//10 ->
+int it4 = 4;
+long lg2 = 4l;
+float flt = 4;
+
+float flt2 = flt + lg2 + it4;
+
+System.out.println(flt2); // 12.0
+
+
+// 11->
+		it4 = 4;
+		lg2 = 4l;
+		flt = 4;
+ double dbl = 4d;
+
+double dbl2 = dbl + flt + lg2 + it4;
+
+System.out.println(dbl2);// 16.0
+
 
 }
 
