@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Swapping{
+public class Greatest{
 public static void main(String []args){
 Scanner sc = new Scanner(System.in);
 char ch;
