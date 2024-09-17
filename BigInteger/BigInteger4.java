@@ -18,6 +18,7 @@ for(BigInteger i = BigInteger.ONE; fact.compareTo(i)>=0;i=i.add(BigInteger.ONE))
 s = s.multiply(i);
 }
 System.out.println("Factorial of "+p+" is "+s);
+sc.close();
  }
 }
 /*
