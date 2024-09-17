@@ -6,13 +6,14 @@ public class BigInteger3{
 public static void main(String[] args){
 Scanner sc = new Scanner(System.in);
 System.out.print("Enter number for Factorial : ");
-int fact = sc.nextInt();
+int fact = sc.nextInt();sc.close();
 BigInteger s = BigInteger.ONE;// BigInteger.valueOf(1);
 int i;
 for(i=1;i<=fact;i++){
  s = s.multiply(BigInteger.valueOf(i));
 }
-System.out.println("Factorial of "+i-1+" is "+s);
+System.out.println("Factorial of "+(i-1)+" is "+s);
+sc.close();
  }
 }
 /*
