@@ -14,6 +14,6 @@ int x = sc.nextInt();
 		System.out.println("--------- Do You Want To Exit :(YES or NO)-----------");
 	  ch = sc.next().charAt(0);
 }while(ch=='N' ||  ch=='n');
-	
+sc.close();
 }
 }
