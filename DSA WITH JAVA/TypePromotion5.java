@@ -15,6 +15,8 @@
 			long   -> long
 			float  -> float
 			double -> double	
+
+	FORMULA ---> MAX(type_of_operand a, type_of_operande b , int) 		
 */
 
 
