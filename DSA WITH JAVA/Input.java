@@ -55,7 +55,7 @@ class Input{
 
 		System.out.println("Enter 3rd String ");
 	   
-         input_char = sc.nextChar();
+         char input_char = sc.next().charAt(0);
 
 		System.out.println("By nextChar() method: "+input_char);
 
@@ -110,7 +110,8 @@ class Input{
 
 // for long
 
-// for programmer while initialisation an lond should use 'l' after the number to know compailar about long value not int 
+// for programmer while initialisation an long should use 'l' after the number 
+// if value is gratter than the size of int to know compailar about long value not int 
 
         System.out.println("Enter 1st long number");
 		
