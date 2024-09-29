@@ -1,13 +1,13 @@
  import java.util.*;
 class Patterns {
    public static void main(String[] args){  
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Enter the pattern number : ");
-       int n = sc.nextInt();
+      // Scanner sc = new Scanner(System.in);
+     //  System.out.println("Enter the pattern number : ");
+     //  int n = sc.nextInt();
       // patterns methods
-         pattern49(n);
+         pattern64(5);
       // pattern32(5);
-      sc.close();
+     // sc.close();
    }
 
    static int min(int a, int b) {
@@ -1150,6 +1150,117 @@ class Patterns {
          System.out.println();
       }
    }
+
+   static void pattern61(int n) {
+      /* 
+* * * * * *
+* * * *   *
+* * *     *
+* *       *
+* * * * * * * * * * *
+          *       * *
+          *     * * *
+          *   * * * *
+          * * * * * *
+          * * * * * *
+       */
+      n = n*2+1;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= n; j++) {
+            if ((i+j<=n/2+2 ||j==n/2+1 || i==n/2+1 || i+j>=n+n/2+1 )) 
+            {
+               System.out.print("* ");
+            } else {
+               System.out.print("  ");
+            }
+         }
+         System.out.println();
+      }
+   }
+
+   static void pattern62(int n) {
+      /* 
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * *
+* * * * * * * * * * * 
+          * * * * * *
+          * * * * * *
+          * * * * * *
+          * * * * * *
+          * * * * * * 
+       */
+      n = n*2+1;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= n; j++) {
+            if ((i<=n/2+1 && j<=n/2+1 || i>=n/2+1 && j>=n/2+1)) 
+            {
+               System.out.print("* ");
+            } else {
+               System.out.print("  ");
+            }
+         }
+         System.out.println();
+      }
+   }
+   static void pattern63(int n) {
+      /* 
+          * * * * * * 
+        *   * * * * *
+      *       * * * * 
+    *           * * *
+  *               * *
+*                   *
+* *               *
+* * *           *
+* * * *       *
+* * * * *   *
+* * * * * * 
+
+       */
+      n = n*2+1;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= n; j++) {
+            if ((i+j==n/2+2 ||i-j>=n/2 || j-i>=n/2 || i+j==n+n/2+1 )) 
+            {
+               System.out.print("* ");
+            } else {
+               System.out.print("  ");
+            }
+         }
+         System.out.println();
+      }
+   }
+   static void pattern64(int n) {
+      /* 
+  *   *   *   *   *   
+* * * * * * * * * * *
+  *   *   *   *   *
+* * * * * * * * * * *
+  *   *   *   *   *
+* * * * * * * * * * *
+  *   *   *   *   *
+* * * * * * * * * * * 
+  *   *   *   *   *
+* * * * * * * * * * *
+  *   *   *   *   *
+       */
+      n = n*2+1;
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= n; j++) {
+            if ((i*j)%2==0) 
+            {
+               System.out.print("* ");
+            } else {
+               System.out.print("  ");
+            }
+         }
+         System.out.println();
+      }
+   }
+
 
    static void pattern1_1(int n) {
       int i, j;
