@@ -1,0 +1,74 @@
+body
+{
+	background-image: url('s1.png');
+	background-repeat:no-repeat;
+	background-size:1700px 1200px;
+}
+#menu
+{
+	background: rgba(0,0,0,0.5);
+	color:white;
+	text-align:right;
+}
+
+#menu ul li
+{
+	display : inline-block;		
+	padding: 20px;
+}
+#tabs
+{
+	background: rgba(0,0,0,0.5);
+	color:white;
+}
+
+#tabs ul li
+{
+	display : inline-block;		
+	padding: 20px;
+}
+#ig
+{
+text-align:right;
+}
+
+table
+{
+	margin-top:180px;
+	margin-right:130px;
+	color : white;
+	background:rgba(0,0,0,0.3);
+	box-shadow:15px	15px 15px white;
+}
+.log
+{
+	width:85px;
+	height:35px;
+	background:linear-gradient(red,blue);
+	color:white;
+	border-radius:20px 0px 20px 0px;
+}
+
+.log:hover
+{
+	width:85px;
+	height:35px;
+	background:linear-gradient(to right,red,blue);
+	color:white;
+	border-radius:0px 20px 0px 20px;
+}
+
+a:link
+{
+	color:white;
+}
+
+a:visited
+{
+	color:white;
+}
+
+a:hover
+{
+	color:white;
+}
