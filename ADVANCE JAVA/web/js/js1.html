@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+	c = 1;
+function demo()
+{
+	if(c==1)
+	{
+		document.getElementById('x').innerHTML="Pratham";
+		document.getElementById('x').style.background="red";
+		document.getElementById('x').style.color="black";
+		
+	}
+	else if(c==2)
+	{
+		document.getElementById('x').innerHTML="Sandeep";
+		document.getElementById('x').style.background="cyan";
+		document.getElementById('x').style.color="yellow";
+		
+	}
+	else
+	{
+		document.getElementById('x').innerHTML="Myself";
+		document.getElementById('x').style.background="black";
+		document.getElementById('x').style.color="red";
+		c=0;
+	}
+	c++;
+	setTimeout(demo,1000);
+}
+</script>
+<style>
+h1{
+margin-top:300px;
+}
+</style>
+</head>
+<body onload="demo()">
+<center><h1 id="x"><h1></center>
+</body>
+</html>
