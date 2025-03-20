@@ -2,7 +2,7 @@ import java.io.*;
 import java.sql.*;
 import java.util.Scanner;
 
-public class FileJDBC {
+public class FileJdbc {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/ExploreHub?useSSL=false";
     private static final String DB_USER = "root";  // Change if needed
@@ -32,11 +32,13 @@ public class FileJDBC {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
              PreparedStatement stmt = conn.prepareStatement(
-                "INSERT INTO Files (project_id, file_data, file_type, uploaded_at) VALUES (?, ?, ?, NOW())");
+                "INSERT INTO Files (project_id, file_data, file_name, file_type, uploaded_at) VALUES (?, ?, ?, ?, NOW())");
              FileInputStream fis = new FileInputStream(file);
             stmt.setInt(1, projectId);
             stmt.setBinaryStream(2, fis, (int) file.length());
-            stmt.setString(3, fileType);
+			stmt.setString(3, file.getName());
+            stmt.setString(4, fileType);
+			
 
             int rowsInserted = stmt.executeUpdate();
             System.out.println(rowsInserted > 0 ? "File uploaded successfully!" : "Upload failed.");
