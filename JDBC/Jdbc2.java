@@ -47,7 +47,7 @@ import java.sql.*;
 	 String s2 ="8888";
   try{
 	  //	2.Load and Register the Driver
-	     Class.forName("com.mysql.cj.jdbc.Driver");
+	     Class.forName("com.mysql.jdbc.Driver");
 		              //"com.mysql.jdbc.Driver"    
 	  
 	  //    3.Opening database connection to MySql server
