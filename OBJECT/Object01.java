@@ -1,25 +1,18 @@
+class Employee
+{
+	
+}
+
 class Object01
 {
 	public static void main(String [] args)
 	{
-		Object o = new Object();
-		String s = new String();
-		StringBuffer sb = new StringBuffer();
+		Employee e = new Employee();
 		
-		System.out.println(o instanceof Object); 		// true
-		System.out.println(o instanceof String); 		// false
-		System.out.println(o instanceof StringBuffer);  // false
-
-		System.out.println(s instanceof Object);		// true
-		System.out.println(s instanceof String);		// true
-	//	System.out.println(s instanceof StringBuffer);	// Error
-
-		System.out.println(sb instanceof Object);		// true
-	//	System.out.println(sb instanceof String);		// Error
-		System.out.println(sb instanceof StringBuffer);	// true
-
-
-
+		//public final native java.lang.Class<?> getClass();
+		
+		System.out.println(e.getClass()); // class Employee
+		System.out.println(e.getClass().getName()); //Employee
 	}
 }
 
@@ -27,7 +20,7 @@ class Object01
    //Compiled from "Object.java"
   public class java.lang.Object {
   public java.lang.Object();
-  
+ 
   public java.lang.String toString();
   public native int hashCode();
   public boolean equals(java.lang.Object);
