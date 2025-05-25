@@ -7,18 +7,18 @@ class Employee
 		this.id = id;
 		this.name = name;
 	}
-	public boolean equals(Object o)
-	{
-		if(this == 0)return true;
-		
-		if(o instanceof Employee)
+
+	/*
+	// inside the Object Class
+		public String toString()
 		{
-			Employee e = (Employee)o;
-			if(id == e.id && (name.equals(e.name)))
-			return true;
-			return false;
+			return getClass().getName()+"@"+Integer.toHexString(hashCode());
 		}
-		else return false;
+	*/
+	
+	public String toString()
+	{
+		return "id = "+this.id+"\t name = "+this.name;
 	}
 }
  
@@ -26,25 +26,13 @@ class Object02
 {
 	public static void main(String [] args)
 	{
-		
-		Employee e1 = new Employee(101,"aaa");
-		Employee e2 = new Employee(102,"bbb");
-		Employee e3 = new Employee(101,"aaa");
-		Employee e4 = e1;
-		
-		System.out.println(e1 == e2);			// false
-		System.out.println(e1 == e3);			// false 
-		System.out.println(e1 == e4);			// true
-		
-		System.out.println(e1.equals(e2));		// false
-		System.out.println(e1.equals(e3));		// true
-		System.out.println(e1.equals(e4));		// true
-		System.out.println(e1.equals(101));		// false	
-		System.out.println(e1.equals("aaa"));	// false	
-		System.out.println(e1.equals(null));	// false
-		
+		Employee e1 = new Employee(101,"Ram");
+		Employee e2 = new Employee(102,"Sita");
 
-
+		//public java.lang.String toString();
+		
+		System.out.println(e1); // id = 101	name = Ram
+		System.out.println(e2); // id = 102	name = Sita
 	}
 }
 
