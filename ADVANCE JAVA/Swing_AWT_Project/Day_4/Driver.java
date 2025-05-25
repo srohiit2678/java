@@ -64,6 +64,7 @@
 				JOptionPane.showMessageDialog(login.menu,"Invalid User & Password","Alert",JOptionPane.WARNING_MESSAGE);		
 			 } 
 			 else if(isPresent(name,pass))
+				//if(true)
 			 {
 	 			 card.show(cn,"Menu");
 			 }
