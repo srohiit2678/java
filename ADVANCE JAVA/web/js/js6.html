@@ -1,0 +1,92 @@
+<html>
+<head>
+<script type="text/javascript">
+function start(){
+	document.getElementById('textfield').style.visibility = "visible";
+}
+function distroy(){
+	document.getElementById('textfield').style.visibility = "hidden";
+
+}
+function clean(){
+	document.getElementById('textfield').value = "";
+}
+function addToField(value) {
+             field = document.getElementById('textfield');
+            field.value += value; 
+}
+
+function calculate() {
+             field = document.getElementById('textfield'); 
+                field.value = eval(field.value);
+            
+        }
+
+</script>
+<style type="text/css">
+#equal{
+width:30px;
+height:180px;
+}
+#textfield{
+width:280px;
+height:20px;
+text-align: right;
+}
+#clear,#on,#off,#plus,#nine,#eight,#seven,#minus,#six,#five,#fiv,#four,#multi,#three,#two,#one,#div,#zero,#zeroo,#dot,#mod{
+border-radius:50%;
+}
+body{
+background-image:url(NEuip.jpg);
+}
+
+</style>
+</head>
+<body onload="distroy()">
+<center>
+<br><br>
+<input type="text" id="textfield" readonly><br><br>
+<table cellpadding="12">
+
+<tr>
+<td><input type="button" id="clear" value="C" onclick="clean()"></td>
+<td><input type="button" id="on" value="ON" onclick="start()"></td>
+<td><input type="button" id="off" value="OFF" onclick="distroy()"></td>
+<td><input type="button" id="plus" value="+" onclick="addToField('+')"></td>
+<th rowspan="5"><input type="button" id="equal" value="=" onclick="calculate()"></th>
+</tr>
+
+<tr>
+<td><input type="button" id="nine" value="9" onclick="addToField('9')"></td>
+<td><input type="button" id="eight" value="8" onclick="addToField('8')"></td>
+<td><input type="button" id="seven" value="7" onclick="addToField('7')"></td>
+<td><input type="button" id="minus" value="-"  onclick="addToField('-')"></td>
+</tr>
+
+<tr>
+<td><input type="button" id="six" value="6" onclick="addToField('6')"></td>
+<td><input type="button" id="five" value="5" onclick="addToField('5')"></td>
+<td><input type="button" id="four" value="4" onclick="addToField('4')"></td>
+<td><input type="button" id="multi" value="X" onclick="addToField('*')"></td>
+
+</tr>
+
+<tr>
+<td><input type="button" id="three" value="3" onclick="addToField('3')"></td>
+<td><input type="button" id="two" value="2" onclick="addToField('2')"></td>
+<td><input type="button" id="one" value="1" onclick="addToField('1')"></td>
+<td><input type="button" id="div" value="/" onclick="addToField('/')"></td>
+
+</tr>
+
+<tr>
+<td><input type="button" id="zero" value="0" onclick="addToField('0')"></td>
+<td><input type="button" id="zeroo" value="00" onclick="addToField('00')"></td>
+<td><input type="button" id="dot" value="." onclick="addToField('.')"></td>
+<td><input type="button" id="mod" value="%" onclick="addToField('%')"></td>
+
+</tr>
+</table>
+</center>
+</body>
+</html>

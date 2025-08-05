@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+	c = 1;
+function demo()
+{
+	switch(c){
+	case 1:
+		document.getElementById('x').src="img1.png";	
+		c++;
+		break;
+	case 2:
+		document.getElementById('x').src="img2.jpg";
+		c++;
+		break;
+	case 3:
+		document.getElementById('x').src="img3.jpg";
+	    c=1;
+		break;
+	
+	}
+	setTimeout(demo,1000);
+}
+</script>
+</head>
+<body onload="demo()">
+<center><img src="" id="x" width="200" height="200"></center>
+</body>
+</html>

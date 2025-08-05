@@ -1,0 +1,40 @@
+<html>
+<head>
+<script type="text/javascript">
+function demo()
+{
+	a = document.getElementById('t1').value.length;
+	if(a<=0)
+	{
+	document.getElementById('f').innerHTML="Enter.?";
+	document.getElementById('f').style.background="red";
+	document.getElementById('f').style.color="white";
+	}
+	else if(a<4)
+	{
+	document.getElementById('f').innerHTML="week";
+	document.getElementById('f').style.background="red";
+	document.getElementById('f').style.color="white";
+	}
+	else if(a<8)
+	{
+	document.getElementById('f').innerHTML="Good";	
+	document.getElementById('f').style.background="yellow";
+	document.getElementById('f').style.color="black";
+	}
+	else
+	{
+	document.getElementById('f').innerHTML="Strong";
+	document.getElementById('f').style.background="green";
+	document.getElementById('f').style.color="white";
+	}
+}
+</script>
+</head>
+<body>
+<center>
+<input type="text" id ="t1" onkeyup="demo()">&nbsp &nbsp
+<font id ="f"></font>
+</center>
+</body>
+</html>

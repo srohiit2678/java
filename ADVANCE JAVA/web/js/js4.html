@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+function demo()
+{
+	d = new Date();
+	document.getElementById('h').innerHTML=d.getHours();
+	document.getElementById('m').innerHTML=d.getMinutes();
+	document.getElementById('s').innerHTML=d.getSeconds();
+	
+	demo2();	
+	setTimeout(demo,1000);
+	
+}
+function demo2()
+{
+    document.getElementById('b1').style.visibility = "hidden";
+    document.getElementById('b2').style.visibility = "hidden";
+    setTimeout(demo3,100);
+}
+
+function demo3()
+{
+    document.getElementById('b1').style.visibility = "visible";
+    document.getElementById('b2').style.visibility = "visible";
+    setTimeout(demo2,900);
+}
+</script>
+<style type="text/css">
+p
+{
+background:black;
+color:white;
+}
+font
+{
+	background:white;
+	color:red;
+}
+#b1,#b2
+{
+	color:red;
+}
+</style>
+</head>
+<body onload="demo()">
+<center>
+<p>
+<font id="h"></font><span id="b1"> :</span>
+<font id="m"></font><span id="b2"> :</span>
+<font id="s"></font>
+</p>
+</center>
+</body>
+</html>
